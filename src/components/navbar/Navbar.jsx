@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav>
             <div className="nav-left">
                 <a href="/" className="logo">
-                    <img src="/logo.png" alt="" />
+                    <img src="./logo.png" alt="" />
                     <span>Estate</span>
                 </a>
                 <a href="">Home</a>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     )
                 }
                 <div className="menu-icon">
-                    <img src="/menu.png" alt="" onClick={()=>{setOpen(!open)}}/>
+                    <img src="./menu.png" alt="" onClick={()=>{setOpen(!open)}}/>
                 </div>
                 <div className={open ? "menu active" : "menu"}>
                 <a href="">Home</a>

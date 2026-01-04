@@ -3,6 +3,7 @@ import SinglePage from "./routes/singlePage/singlePage";
 import LoginPage  from "./routes/loginPage/loginPage";
 import {
   createBrowserRouter,
+  createHashRouter,
   RouterProvider,
   
 } from "react-router-dom";
@@ -10,9 +11,7 @@ import ListPage from "./routes/listPage/listPage";
 import Layout from "./routes/layout/layout";
 import ProfilePage from "./routes/profilePage/ProfilePage";
 
-const App = () => {
-
-  const router = createBrowserRouter([
+const router = createHashRouter([
     {
       path: "/" ,
       element: <Layout />,
@@ -44,6 +43,8 @@ const App = () => {
       ]
     }
   ]);
+
+const App = () => {
 
   return ( 
       <RouterProvider router={router}/>
